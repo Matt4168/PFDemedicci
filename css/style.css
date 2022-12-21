@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+}
+
+@font-face {
+    font-family: "vinilofont";
+    src: url(../assets/font/vinilo/vinilo.ttf);
+}
+@font-face{
+    font-family: "neon";
+    src: url(../assets/font/neon/Neon.ttf);
+}
+ body{
+background-color: #fcfdff;
+width: 100vw;
+height: 100vh;
+overflow-x:hidden;
+ }
+header{
+    width: 100vh;
+    height: 10vh;
+}
+main{
+    width: 100vw;
+    height: 80vh;
+}
+footer{
+    width: 100vw;
+    height: 10vh;    
+}
+.copy1{
+width: 10vw;
+height: 10vh;
+position: relative;
+top: 7vh;
+left: 85vw;
+color: #a6aec1;
+}
+.copy2{
+    width: 10vw;
+    height: 10vh;
+    position: relative;
+    top: 160vh;
+    left: 90vw;
+    color: #a6aec1;
+    }
+    
+    
+    
+.copy3{
+        width: 10vw;
+        height: 10vh;
+        position: relative;
+        top: 80vh;
+        left: 90vw;
+        color: #a6aec1;
+        }
+            
+a{
+    text-decoration: none;
+    color: #ededf2;
+}
+ul{
+    list-style-type: none; 
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 1.5rem; 
+}
+li{
+    width: 10px;
+    height: 5px;
+    margin-left: 7px;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline;  
+    background-color: #a6aec1;
+    border: 1px solid black;
+}
+#tituloinicio{
+    height: 200px;
+    width: 80vw;
+    justify-self: center;
+    display: flex;
+    left: 10vw;
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/13/13510.png?w=360);
+    background-repeat: repeat;
+    background-size: 4rem;
+    font-family: "vinilofont", Times, serif;
+    border-color: black;
+    color: #6c788e;
+    text-align: center;
+    font-size: 9rem;
+}
+.Imginferiorinicio{
+    width:150vw;
+    height:50vh;
+    display: inline;
+    position: relative;
+    top: 15vh;
+}
+img{
+    width: 50%;
+    height: 50%;
+    float: left;
+    margin-left: 40px;
+}
+.cajatextoinicio{
+    width: 30vw;
+    height: 40vh;
+    position: relative;
+    bottom: 20vh;
+    left: 60vw;
+    font-size: 20px;
+    font-family: "neon";
+}
+.cajatexto{
+    width: 30vw;
+    height: 40vh;
+    display: inline;
+    position: relative;
+    top: 40vh;
+    left: 50vw;
+    box-sizing: content-box;
+    text-align: justify;
+    overflow:scroll;
+    font-family: "neon";
+    font-size: 1.5rem;
+    justify-content: center;
+}
+table{
+    width:80vw;
+    display: block;
+    position: relative;
+    left: 10vw;
+    right: 10vw;
+    text-align: center;
+    font-family: "neon";
+    background-color: #ededf2;
+}
+.titulos{
+    height: 100px;
+    width: 80vw;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    right: 10vw;
+    left: 10vw;
+    margin: 40px;
+    font-family: "vinilofont", Times, serif;
+    color: #6c788e;
+    text-align:center;
+    font-size: 4rem;
+}
+.textohorizontal{
+    height: 30vh;
+    width: 80vw;
+    display: block;
+    position: relative;
+    right: 10vw;
+    left: 10vw;
+    padding-top: 40px;
+    font-family: "neon";
+    font-size: 1.25rem;
+    text-align: justify;
+
+}
+.videos{
+    width: 70vw;
+    position: relative;
+    top: 5vh;
+    right: 15vw;
+    bottom: 5vh;
+    left: 15vw;
+}
+.textolateral{
+    width: 700px;
+    height: 200px;
+    position: relative;
+    left: 50px;
+    font-family: "neon";
+    font-size: 1.5rem;
+}
+.imagenlateral{
+    width: 450px;
+    height: 300px;
+    position: relative;
+    display: inline;
+    bottom: 200px;
+    left: 750px;
+}
+input{
+    width: 20vw;
+    height: 20px;
+    position: relative;
+    bottom: 100px;
+    left: 800px;
+    display: block;
+}
+textarea{
+    width: 30vw;
+    height: 70px;  
+    bottom: 100px;
+    left: 800px;
+    position: relative;
+    display: block;
+}
+select{
+    width: 20vw;
+    height: 20px;
+    position: relative;
+    bottom: 100px;
+    left: 800px;
+    display: block;
+}
+label{
+    width: 20vw;
+    height: 20px;
+    position: relative;
+    bottom: 100px;
+    left: 800px;
+    display: block;
+}
