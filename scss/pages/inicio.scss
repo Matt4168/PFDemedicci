@@ -1,0 +1,39 @@
+    .tituloinicio {
+        height: 20vh;
+        margin-top: 5vh;
+        margin-left: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        font-family: $font-family_1;
+        border-color: $border-color_1;
+        color: $titulos;
+        text-align: center;
+        font-size: 7rem;
+    }
+    .parteinferiorinicio {
+        display: grid;
+        background-color: $background-color_2;
+        margin-top: 3rem;
+        grid-template-columns: 50% 50%;
+        .Imginferiorinicio {
+            width: 50vw;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+            flex-wrap: wrap;
+        }
+        .cajatextoinicio {
+            width: 40vw;
+            display: flex;
+            justify-content: end;
+            text-align: justify;
+            font-family: $font-family_2;
+            font-size: 1.5rem;
+            color: $fondo;
+        }
+
+    }
+

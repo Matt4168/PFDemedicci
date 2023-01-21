@@ -1,0 +1,148 @@
+$titulos: #0f50c9;
+$fondo: rgb(221, 247, 247);
+$color_3: aliceblue;
+$copyright: rgba(41, 41, 41, 0.63);
+$font-family_1: "vinilofont", Times, serif;
+$font-family_2: "neon";
+$background-color_1: aliceblue;
+$background-color_2: #3275f1;
+$background-color_3: #2f72f0;
+$border-color_1: black;
+
+@font-face {
+	font-family: "vinilofont";
+	src: url(../assets/font/vinilo/vinilo.ttf);
+}
+@font-face {
+	font-family: "neon";
+	src: url(../assets/font/neon/Neon.ttf);
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+@import "./pages/inicio.scss";
+@import "./pages/comienzo.scss";
+@import "./pages/cuidado.scss";
+@import "./pages/contacto.scss";
+@import "./pages/listado.scss";
+
+header {
+    width: 100vw;
+}
+
+body {
+	background-color: $fondo;
+	overflow-x: hidden;
+    width: 100vw;
+}
+.copyright {
+	width: 10vw;
+	display: flex;
+	align-self: flex-end;
+	color: $copyright;
+}
+@media (max-width: 1024px) {
+	.parteinferiorinicio .cajatextoinicio  {
+		font-size: 1.2rem;
+	}
+    .titulos {
+		font-size: 2.5rem;
+	}
+}
+@media (max-width: 768px) {
+    .tituloinicio {
+		font-size: 5rem;
+	}
+	.parteinferiorinicio .cajatextoinicio {
+		font-size: 1rem;
+	}
+    .titulos{
+        margin-top: 1.5rem;
+        margin-left: 4rem;
+    }
+	.tabla {
+		height: 80vh;
+        margin-left: 10rem;
+	}
+    .seccioncuidado {
+		display: flex;
+		flex-direction: column-reverse;
+        .textolateral {
+            font-size: 1rem;
+            margin-left: 2rem;
+            padding: 1rem;
+        }
+	}
+	.cuidado {
+		display: flex;
+		flex-direction: column;
+	}
+	.videos {
+		width: 90vw;
+		margin-left: 3rem;
+	}
+    .formulario{
+        margin-top: 2rem;
+        margin-left: 13rem;
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width: 425px) {
+	.tituloinicio {
+		font-size: 3.5rem;
+	}
+	.parteinferiorinicio {
+		height: 90vh;
+        width: 100vw;
+		grid-template-columns: 0;
+		grid-template-rows: 50% 50%;
+		flex-direction: column;
+        .Imginferiorinicio{
+            width: 80vw;
+            margin-left: 2rem;
+        }
+        .cajatextoinicio {
+            text-align: center;
+            width: 100vw;
+            margin-left: 0;
+        }
+	}
+	.titulos {
+		font-size: 1.8rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+	}
+	.tabla {
+		width: 100vw;
+		padding: 0;
+		margin-left: 0;
+	}
+    .formulario{
+        margin-left: 7rem;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .comienzo{
+        .textohorizontal{
+            font-size: 1rem;
+        }
+    }
+    .tituloinicio {
+		font-size: 3rem;
+	}
+	.parteinferiorinicio {
+		height: 100vh;
+	}
+    .titulos {
+		font-size: 1.5rem;}
+    .videos {
+        margin-left: 1rem;
+        }
+    .copyright{
+        font-size: 0.5rem;
+    }
+}
