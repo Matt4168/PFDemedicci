@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 16px;
+}
+
+body {
+	background-color: $fondo;
+	overflow-x: hidden;
+    width: 100vw;
+    header {
+        width: 100vw;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(../assets/icons/icons8-grabar-música-80.png);
+    }
+    footer{
+        margin-top: 1rem;
+    }
+}

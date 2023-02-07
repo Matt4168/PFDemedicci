@@ -1,148 +1,143 @@
-$titulos: #0f50c9;
-$fondo: rgb(221, 247, 247);
-$color_3: aliceblue;
-$copyright: rgba(41, 41, 41, 0.63);
-$font-family_1: "vinilofont", Times, serif;
-$font-family_2: "neon";
-$background-color_1: aliceblue;
-$background-color_2: #3275f1;
-$background-color_3: #2f72f0;
-$border-color_1: black;
-
-@font-face {
-	font-family: "vinilofont";
-	src: url(../assets/font/vinilo/vinilo.ttf);
-}
-@font-face {
-	font-family: "neon";
-	src: url(../assets/font/neon/Neon.ttf);
-}
-* {
-	margin: 0;
-	padding: 0;
-}
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./layout/generallayout";
 @import "./pages/inicio.scss";
 @import "./pages/comienzo.scss";
-@import "./pages/cuidado.scss";
 @import "./pages/contacto.scss";
+@import "./pages/cuidado.scss";
 @import "./pages/listado.scss";
-
-header {
-    width: 100vw;
-}
-
-body {
-	background-color: $fondo;
-	overflow-x: hidden;
-    width: 100vw;
-}
-.copyright {
-	width: 10vw;
-	display: flex;
-	align-self: flex-end;
-	color: $copyright;
+ 
+// MEDIAQUERIES
+@media (max-width: 1440px) {
+    html{
+        font-size: 14px;
+    }
+    .primerapagina .tituloinicio{
+        font-size: 12rem;
+    }
+	.listado .contenedor .card{
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 0;
+		.botondiscos{
+			border-radius: 0;
+		}
+	}
 }
 @media (max-width: 1024px) {
-	.parteinferiorinicio .cajatextoinicio  {
-		font-size: 1.2rem;
+	html{
+		font-size: 12px;
 	}
-    .titulos {
-		font-size: 2.5rem;
+	
+	.primerapagina {
+		.tituloinicio{
+			font-size: 10rem;
+		}
+	}
+	.primerapagina .parteinferiorinicio1{
+		width: 100vw;
+	}
+	.titulo{
+		font-size: 5rem;
 	}
 }
 @media (max-width: 768px) {
-    .tituloinicio {
-		font-size: 5rem;
+	html{
+		font-size: 10px;
 	}
-	.parteinferiorinicio .cajatextoinicio {
-		font-size: 1rem;
+    .primerapagina {
+		.tituloinicio {
+			font-size: 7.5rem;
+		}
+		.parteinferiorinicio1{
+			grid-template-columns:0;
+			grid-template-rows: 50% 50%;
+			justify-content: center;
+			.cajatextoinicio{
+				width: 90vw;
+				font-size: 1.5rem;
+			}
+		}
+		.parteinferiorinicio1 .imginferiorinicio{
+				width: 14rem;
+				height: 14rem;
+			}
 	}
-    .titulos{
-        margin-top: 1.5rem;
-        margin-left: 4rem;
-    }
-	.tabla {
-		height: 80vh;
-        margin-left: 10rem;
-	}
-    .seccioncuidado {
-		display: flex;
-		flex-direction: column-reverse;
-        .textolateral {
-            font-size: 1rem;
-            margin-left: 2rem;
-            padding: 1rem;
-        }
-	}
-	.cuidado {
-		display: flex;
-		flex-direction: column;
-	}
-	.videos {
-		width: 90vw;
-		margin-left: 3rem;
-	}
-    .formulario{
-        margin-top: 2rem;
-        margin-left: 13rem;
-        margin-right: 10rem;
-    }
 }
 
 @media (max-width: 425px) {
-	.tituloinicio {
-		font-size: 3.5rem;
+	html{
+		font-size: 8px;
 	}
-	.parteinferiorinicio {
-		height: 90vh;
+	.primerapagina .tituloinicio{
+		height: 40vh;
+		font-size: 8.5rem;
+	}
+	.primerapagina .parteinferiorinicio1 {
+		height: 100vh;
         width: 100vw;
 		grid-template-columns: 0;
 		grid-template-rows: 50% 50%;
 		flex-direction: column;
-        .Imginferiorinicio{
-            width: 80vw;
-            margin-left: 2rem;
-        }
-        .cajatextoinicio {
-            text-align: center;
+		.imginferiorinicio{
+			width: 30rem;
+    		height: 30rem;
+			border-radius: 15rem;
+		}
+	}
+
+	.primerapagina .parteinferiorinicio1 .cajatextoinicio {
+            text-align: justify;
             width: 100vw;
             margin-left: 0;
+			font-size: 2rem;
         }
-	}
-	.titulos {
-		font-size: 1.8rem;
-        margin-top: 1rem;
-        margin-left: 1rem;
-	}
-	.tabla {
+	.videos{
 		width: 100vw;
-		padding: 0;
-		margin-left: 0;
 	}
-    .formulario{
-        margin-left: 7rem;
-        margin-right: 0;
-    }
+	.listado .contenedor .card{
+		flex-direction: row;
+		align-items: center;
+		width: 100vw;
+		.infodisco{
+			width: 70vw;
+		}
+		.imagendisco{
+			width: 40rem;
+			height: 26rem;
+		}
+	}
+	.contacto{
+		flex-direction: column;
+	}
 }
-
+@media (max-width: 375px){
+	html{
+		font-size: 6px;
+	}
+	.primerapagina .parteinferiorinicio1 {
+		.cajatextoinicio{
+			font-size: 2.4rem;
+		}
+		.imginferiorinicio{
+			width: 40rem;
+			height: 40rem;
+			border-radius: 20rem;
+		}
+	}
+}
 @media (max-width: 320px) {
-    .comienzo{
-        .textohorizontal{
-            font-size: 1rem;
-        }
-    }
-    .tituloinicio {
-		font-size: 3rem;
+	html{
+		font-size: 4px;
 	}
-	.parteinferiorinicio {
-		height: 100vh;
+	.primerapagina {
+		.parteinferiorinicio1{
+			height: 70vh;
+		}	
+		.tituloinicio {
+			font-size: 10rem;
+			height: 30vh;
+		}
 	}
-    .titulos {
-		font-size: 1.5rem;}
-    .videos {
-        margin-left: 1rem;
-        }
-    .copyright{
-        font-size: 0.5rem;
-    }
-}
+	}
+ 

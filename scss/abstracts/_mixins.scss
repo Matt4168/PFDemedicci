@@ -1,0 +1,32 @@
+@mixin titulos{
+    width: 80vw;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 8rem;
+    font-family: $font-family_1;
+    color: $titulos2;
+    background-image: url(../assets/images/pexels-andre-moura-2563017.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 4px 11px 13px 0px rgba(0,0,0,0.72);
+    -webkit-box-shadow: 4px 11px 13px 0px rgba(0,0,0,0.72);
+    -moz-box-shadow: 4px 11px 13px 0px rgba(0,0,0,0.72);
+}
+@mixin textohorizontal{
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    padding: 1rem;
+    font-family: $font-family_2;
+    font-size: 1.5rem;
+    color: $textohorizontal;
+    text-align: justify;
+    background-color: $fondotexto;
+    
+}

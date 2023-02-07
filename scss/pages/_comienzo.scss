@@ -1,0 +1,22 @@
+
+    .titulo{
+        @include titulos;
+    }
+    .textohorizontal {
+     @include textohorizontal;
+        .subtitulos{
+            font-size: 3.7rem;
+            font-weight: bold;
+        }
+    }
+    .videos {
+        width: 70vw;
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        margin-top: 1rem;
+    }
+    

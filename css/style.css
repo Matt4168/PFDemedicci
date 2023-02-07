@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "vinilofont";
   src: url(../assets/font/vinilo/vinilo.ttf); }
@@ -10,237 +11,297 @@
   margin: 0;
   padding: 0; }
 
-.tituloinicio {
-  height: 20vh;
-  margin-top: 5vh;
-  margin-left: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  font-family: "vinilofont", Times, serif;
-  border-color: black;
-  color: #0f50c9;
-  text-align: center;
-  font-size: 7rem; }
+html {
+  font-size: 16px; }
 
-.parteinferiorinicio {
-  display: grid;
-  background-color: #3275f1;
-  margin-top: 3rem;
-  grid-template-columns: 50% 50%; }
-  .parteinferiorinicio .Imginferiorinicio {
-    width: 50vw;
-    height: 30vh;
+body {
+  background-color: white;
+  overflow-x: hidden;
+  width: 100vw; }
+  body header {
+    width: 100vw; }
+  body main {
     display: flex;
     justify-content: center;
-    padding-top: 1rem;
-    flex-wrap: wrap; }
-  .parteinferiorinicio .cajatextoinicio {
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../assets/icons/icons8-grabar-música-80.png); }
+  body footer {
+    margin-top: 1rem; }
+
+.primerapagina .tituloinicio {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-size: 15rem;
+  font-family: "vinilofont", Times, serif;
+  color: white;
+  background-image: url(../assets/images/pexels-merve-7497788.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center; }
+
+.primerapagina .parteinferiorinicio1, .primerapagina .parteinferiorinicio2 {
+  display: grid;
+  width: 85vw;
+  justify-self: center;
+  margin-top: 6rem;
+  justify-items: center;
+  grid-template-columns: 40% 60%;
+  background-color: #1f1f1f; }
+  .primerapagina .parteinferiorinicio1 .imginferiorinicio, .primerapagina .parteinferiorinicio2 .imginferiorinicio, .primerapagina .parteinferiorinicio1 .parteinferiorinicio2, .primerapagina .parteinferiorinicio2 .parteinferiorinicio2 {
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    align-self: center;
+    border-radius: 12.5rem; }
+  .primerapagina .parteinferiorinicio1 .cajatextoinicio, .primerapagina .parteinferiorinicio2 .cajatextoinicio, .primerapagina .parteinferiorinicio2 .cajatextoinicio2 {
     width: 40vw;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    justify-content: center;
     text-align: justify;
     font-family: "neon";
-    font-size: 1.5rem;
-    color: #ddf7f7; }
-
-.comienzo {
-  display: grid;
-  grid-template-rows: 5% 20% 20% 40% 20%;
-  justify-content: center;
-  align-items: center; }
-  .comienzo .textohorizontal {
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 5vw;
-    margin-top: 5vh;
+    font-size: 2rem;
     padding: 1rem;
-    font-family: "neon";
-    font-size: 1.25rem;
-    color: aliceblue;
-    text-align: justify;
-    background-color: #2f72f0; }
-  .comienzo .videos {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative; }
+    color: white; }
 
-.cuidado {
+.primerapagina .parteinferiorinicio2 {
   display: grid;
-  grid-template-rows: 10% 60% 30%;
-  justify-content: center;
-  align-items: center; }
+  grid-template-columns: 60% 40%;
+  background-color: #572260; }
 
-.titulos {
-  height: 20vh;
-  width: 80vw;
-  margin-top: 5rem;
-  margin-left: 6rem;
+.primerapagina .botonempezar {
+  width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  font-family: "vinilofont", Times, serif;
-  border-color: black;
-  color: #0f50c9;
-  text-align: center;
-  font-size: 4rem; }
+  margin-top: 1rem;
+  justify-content: center; }
 
-.seccioncuidado {
-  display: grid;
-  grid-template-columns: 50% 50%;
+.titulo {
+  width: 80vw;
+  display: flex;
+  align-self: center;
+  text-align: center;
   justify-content: center;
-  align-items: center; }
-  .seccioncuidado .textolateral {
-    font-family: "neon";
-    font-size: 1.25rem;
-    margin-left: 2rem;
-    padding: 1rem; }
-  .seccioncuidado .imagenlateral {
-    width: 80%;
-    height: 80%;
-    display: flex;
-    justify-content: end;
-    transition: transform .2s; }
-    .seccioncuidado .imagenlateral:hover {
-      transform: scale(1.5); }
+  margin-top: 3rem;
+  font-size: 8rem;
+  font-family: "vinilofont", Times, serif;
+  color: white;
+  background-image: url(../assets/images/pexels-andre-moura-2563017.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 11px 13px 0px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 4px 11px 13px 0px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 4px 11px 13px 0px rgba(0, 0, 0, 0.72); }
+
+.textohorizontal {
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  padding: 1rem;
+  font-family: "neon";
+  font-size: 1.5rem;
+  color: #0e0d0d;
+  text-align: justify;
+  background-color: #f1f1f1; }
+  .textohorizontal .subtitulos {
+    font-size: 3.7rem;
+    font-weight: bold; }
 
 .videos {
-  height: 50vh;
+  width: 70vw;
+  height: 45vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  position: relative; }
+  position: relative;
+  margin-top: 1rem; }
 
-.formulario {
-  width: 50vw;
-  margin-left: 18rem;
-  margin-right: 11rem;
-  margin-top: 1rem;
-  font-family: "neon"; }
+.contacto {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  background-color: white; }
+  .contacto .mapa {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    font-family: "neon";
+    font-size: 10rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    color: black;
+    justify-content: center; }
+  .contacto .contenedorformulario {
+    display: flex;
+    margin-top: 2rem;
+    font-family: "neon";
+    font-weight: bold;
+    justify-content: center;
+    align-items: center; }
+    .contacto .contenedorformulario .formulario {
+      width: 40vw;
+      margin-right: 3rem; }
+
+.separador {
+  height: 5px;
+  width: 50%;
+  background-color: black;
+  margin-top: 2rem; }
 
 .titulos {
-  height: 20vh;
-  width: 80vw;
-  margin-top: 5rem;
-  margin-left: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
   font-family: "vinilofont", Times, serif;
-  border-color: black;
-  color: #0f50c9;
   text-align: center;
-  font-size: 4rem; }
+  font-size: 5rem;
+  margin-top: 1rem;
+  color: #4e034e; }
 
-.tabla {
-  width: 50vw;
+.listado {
   display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 1rem;
-  margin-left: 20rem; }
-  .tabla .discos {
-    transition: transform .2s; }
-    .tabla .discos:hover {
-      transform: scale(1.5); }
+  flex-wrap: wrap; }
+  .listado .contenedor {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .listado .contenedor .card {
+      width: 20rem;
+      overflow: hidden;
+      text-align: center;
+      border: 1px solid rgba(88, 19, 153, 0.979);
+      margin-top: 1rem;
+      border-radius: 15px;
+      box-shadow: 0 0 7px black;
+      margin-left: 6rem;
+      margin-right: 6rem; }
+      .listado .contenedor .card .imagendisco {
+        width: 20rem;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .listado .contenedor .card .imagendisco img {
+          width: 95%;
+          height: 95%; }
+        .listado .contenedor .card .imagendisco img:hover {
+          transform: scale(1.1);
+          transition: 0.1s; }
+      .listado .contenedor .card .infodisco {
+        font-size: 1rem;
+        padding: 0 1.5rem;
+        margin-bottom: 1rem; }
+      .listado .contenedor .card .botondiscos {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-family: "neon";
+        background-color: rgba(88, 19, 153, 0.979);
+        border: 1px solid rgba(88, 19, 153, 0.979);
+        border-radius: 15px;
+        box-shadow: 0 0 7px black;
+        color: white; }
 
-header {
-  width: 100vw; }
-
-body {
-  background-color: #ddf7f7;
-  overflow-x: hidden;
-  width: 100vw; }
-
-.copyright {
-  width: 10vw;
-  display: flex;
-  align-self: flex-end;
-  color: rgba(41, 41, 41, 0.63); }
+@media (max-width: 1440px) {
+  html {
+    font-size: 14px; }
+  .primerapagina .tituloinicio {
+    font-size: 12rem; }
+  .listado .contenedor .card {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0; }
+    .listado .contenedor .card .botondiscos {
+      border-radius: 0; } }
 
 @media (max-width: 1024px) {
-  .parteinferiorinicio .cajatextoinicio {
-    font-size: 1.2rem; }
-  .titulos {
-    font-size: 2.5rem; } }
+  html {
+    font-size: 12px; }
+  .primerapagina .tituloinicio {
+    font-size: 10rem; }
+  .primerapagina .parteinferiorinicio1, .primerapagina .parteinferiorinicio2 {
+    width: 100vw; }
+  .titulo {
+    font-size: 5rem; } }
 
 @media (max-width: 768px) {
-  .tituloinicio {
-    font-size: 5rem; }
-  .parteinferiorinicio .cajatextoinicio {
-    font-size: 1rem; }
-  .titulos {
-    margin-top: 1.5rem;
-    margin-left: 4rem; }
-  .tabla {
-    height: 80vh;
-    margin-left: 10rem; }
-  .seccioncuidado {
-    display: flex;
-    flex-direction: column-reverse; }
-    .seccioncuidado .textolateral {
-      font-size: 1rem;
-      margin-left: 2rem;
-      padding: 1rem; }
-  .cuidado {
-    display: flex;
-    flex-direction: column; }
-  .videos {
-    width: 90vw;
-    margin-left: 3rem; }
-  .formulario {
-    margin-top: 2rem;
-    margin-left: 13rem;
-    margin-right: 10rem; } }
+  html {
+    font-size: 10px; }
+  .primerapagina .tituloinicio {
+    font-size: 7.5rem; }
+  .primerapagina .parteinferiorinicio1, .primerapagina .parteinferiorinicio2 {
+    grid-template-columns: 0;
+    grid-template-rows: 50% 50%;
+    justify-content: center; }
+    .primerapagina .parteinferiorinicio1 .cajatextoinicio, .primerapagina .parteinferiorinicio2 .cajatextoinicio, .primerapagina .parteinferiorinicio2 .cajatextoinicio2 {
+      width: 90vw;
+      font-size: 1.5rem; }
+  .primerapagina .parteinferiorinicio1 .imginferiorinicio, .primerapagina .parteinferiorinicio2 .imginferiorinicio, .primerapagina .parteinferiorinicio1 .parteinferiorinicio2, .primerapagina .parteinferiorinicio2 .parteinferiorinicio2 {
+    width: 14rem;
+    height: 14rem; } }
 
 @media (max-width: 425px) {
-  .tituloinicio {
-    font-size: 3.5rem; }
-  .parteinferiorinicio {
-    height: 90vh;
+  html {
+    font-size: 8px; }
+  .primerapagina .tituloinicio {
+    height: 40vh;
+    font-size: 8.5rem; }
+  .primerapagina .parteinferiorinicio1, .primerapagina .parteinferiorinicio2 {
+    height: 100vh;
     width: 100vw;
     grid-template-columns: 0;
     grid-template-rows: 50% 50%;
     flex-direction: column; }
-    .parteinferiorinicio .Imginferiorinicio {
-      width: 80vw;
-      margin-left: 2rem; }
-    .parteinferiorinicio .cajatextoinicio {
-      text-align: center;
-      width: 100vw;
-      margin-left: 0; }
-  .titulos {
-    font-size: 1.8rem;
-    margin-top: 1rem;
-    margin-left: 1rem; }
-  .tabla {
+    .primerapagina .parteinferiorinicio1 .imginferiorinicio, .primerapagina .parteinferiorinicio2 .imginferiorinicio, .primerapagina .parteinferiorinicio1 .parteinferiorinicio2, .primerapagina .parteinferiorinicio2 .parteinferiorinicio2 {
+      width: 30rem;
+      height: 30rem;
+      border-radius: 15rem; }
+  .primerapagina .parteinferiorinicio1 .cajatextoinicio, .primerapagina .parteinferiorinicio2 .cajatextoinicio, .primerapagina .parteinferiorinicio2 .cajatextoinicio2 {
+    text-align: justify;
     width: 100vw;
-    padding: 0;
-    margin-left: 0; }
-  .formulario {
-    margin-left: 7rem;
-    margin-right: 0; } }
+    margin-left: 0;
+    font-size: 2rem; }
+  .videos {
+    width: 100vw; }
+  .listado .contenedor .card {
+    flex-direction: row;
+    align-items: center;
+    width: 100vw; }
+    .listado .contenedor .card .infodisco {
+      width: 70vw; }
+    .listado .contenedor .card .imagendisco {
+      width: 40rem;
+      height: 26rem; }
+  .contacto {
+    flex-direction: column; } }
+
+@media (max-width: 375px) {
+  html {
+    font-size: 6px; }
+  .primerapagina .parteinferiorinicio1 .cajatextoinicio, .primerapagina .parteinferiorinicio2 .cajatextoinicio, .primerapagina .parteinferiorinicio2 .cajatextoinicio2 {
+    font-size: 2.4rem; }
+  .primerapagina .parteinferiorinicio1 .imginferiorinicio, .primerapagina .parteinferiorinicio2 .imginferiorinicio, .primerapagina .parteinferiorinicio1 .parteinferiorinicio2, .primerapagina .parteinferiorinicio2 .parteinferiorinicio2 {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 20rem; } }
 
 @media (max-width: 320px) {
-  .comienzo .textohorizontal {
-    font-size: 1rem; }
-  .tituloinicio {
-    font-size: 3rem; }
-  .parteinferiorinicio {
-    height: 100vh; }
-  .titulos {
-    font-size: 1.5rem; }
-  .videos {
-    margin-left: 1rem; }
-  .copyright {
-    font-size: 0.5rem; } }
+  html {
+    font-size: 4px; }
+  .primerapagina .parteinferiorinicio1, .primerapagina .parteinferiorinicio2 {
+    height: 70vh; }
+  .primerapagina .tituloinicio {
+    font-size: 10rem;
+    height: 30vh; } }

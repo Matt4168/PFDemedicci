@@ -1,0 +1,29 @@
+.contacto{
+	display: flex;
+	height: 100vh;
+	flex-direction: row;
+	background-color: white;
+	.mapa{
+		width: 40vw;
+		display: flex;
+		flex-direction: column;
+		font-family: $font-family_2;
+		font-size: 10rem;
+		margin-bottom: 1rem;
+		align-items: center;
+		color: black;
+		justify-content: center;
+	}
+	.contenedorformulario {
+		display: flex;
+		margin-top: 2rem;
+		font-family: $font-family_2;
+		font-weight: bold;
+		justify-content: center;
+		align-items: center;
+		.formulario{
+			width: 40vw;
+			margin-right: 3rem;
+		}
+	}
+}

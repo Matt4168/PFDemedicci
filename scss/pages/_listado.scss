@@ -1,0 +1,66 @@
+.titulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-family_1;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 1rem;
+    color: $titulos;
+}
+.listado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .contenedor{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .card{
+            width: 20rem;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid $bordecard;
+            margin-top: 1rem;
+            border-radius: 15px;
+            box-shadow: 0 0 7px black;
+            margin-left: 6rem;
+            margin-right: 6rem;
+            .imagendisco{
+                width: 20rem;
+                height: 20rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 95%;
+                    height: 95%;   
+                }
+                img:hover{
+                    transform: scale(1.1);
+                    transition: 0.1s;
+                }
+            }
+            .infodisco{
+                font-size: 1rem;
+                padding: 0 1.5rem;
+                margin-bottom: 1rem;
+            }
+            .botondiscos{
+                width: 100%;
+                padding: 1rem;
+                font-size: 1.2rem;
+                font-family: "neon";
+                background-color: $bordecard;
+                border: 1px solid $bordecard;
+                border-radius: 15px;
+                box-shadow: 0 0 7px black;
+                color: white;
+            }
+        }
+    }
+}
